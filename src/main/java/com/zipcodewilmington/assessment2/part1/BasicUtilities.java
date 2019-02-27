@@ -1,19 +1,50 @@
 package com.zipcodewilmington.assessment2.part1;
 
 public class BasicUtilities {
-    public Boolean isGreaterThan5(Integer value) {
-        return null;
+    public Boolean isGreaterThan5(int value) {
+        Boolean ans = true;
+
+        if (value >=5) {
+
+            ans = true;
+        } else {
+            ans = false;
+        }
+        return ans;
+    }
+    public Boolean isLessThan7(int value) {
+  Boolean ans = true;
+
+        if (value <=7) {
+
+            ans = true;
+        } else {
+            ans = false;
+        }
+        return ans;
     }
 
-    public Boolean isLessThan7(Integer value) {
-        return null;
-    }
+    public Boolean isBetween5And7(int valueToEvaluate) {
+        Boolean ans = true;
 
-    public Boolean isBetween5And7(Integer valueToEvaluate) {
-        return null;
+        if ((valueToEvaluate >= 5) && (valueToEvaluate <= 7)) {
+
+        ans = true;
+    }
+        else {
+            ans = false;
+        }
+        return ans;
     }
 
     public Boolean startsWith(String string, Character character) {
-        return null;
+        Boolean ans = true;
+        if (string.startsWith(character.toString())) {
+
+            ans = true;
+        } else {
+            ans = false;
+        }
+        return ans;
     }
 }
