@@ -54,14 +54,14 @@ public class ListUtility {
 
     }
 
-    public Integer mostCommon() {
+    public int mostCommon() {
 
         ArrayUtility myarray = new ArrayUtility();
         Integer[] arr = (Integer[])myList.toArray(new Integer[myList.size()]);
 
 
 
-        Integer common = myarray.mostCommon(arr);
+        int common = myarray.mostCommon(arr);
 
 
         return common;

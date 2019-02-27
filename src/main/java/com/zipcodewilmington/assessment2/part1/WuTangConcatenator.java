@@ -1,8 +1,10 @@
 package com.zipcodewilmington.assessment2.part1;
 
 public class WuTangConcatenator {
+    Integer input;
 
     public WuTangConcatenator(Integer input) {
+     this.input = input;
 
 
 
@@ -13,7 +15,7 @@ public class WuTangConcatenator {
         Boolean wunum = true;
 
 
-       Integer input =0;
+
 
         if (input % 3 == 0) {
             wunum = true;
@@ -24,10 +26,32 @@ public class WuTangConcatenator {
     }
 
     public Boolean isTang() {
-        return null;
+        Boolean wunum = true;
+
+
+
+
+        if (input % 5 == 0) {
+            wunum = true;
+        } else {
+            wunum = false;
+        }
+        return wunum;
     }
 
+
+
     public Boolean isWuTang() {
-        return null;
+        Boolean wunum = true;
+
+
+
+
+        if (input % 15 == 0) {
+            wunum = true;
+        } else {
+            wunum = false;
+        }
+        return wunum;
     }
 }

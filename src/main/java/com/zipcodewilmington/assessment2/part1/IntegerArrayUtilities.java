@@ -18,15 +18,18 @@ public class IntegerArrayUtilities {
         ArrayList <Integer> mylist = new ArrayList<>();
         Integer[] myarray = new Integer[]{};
 
-        for (int i=start;i<stop;i++){
+
+
+        for (int i=start;i<(stop-start);i++){
 
 
            mylist.add(i);
-            myarray = (Integer[])mylist.toArray(new Integer[mylist.size()]);
+
 
 
         }
-
+        mylist.add(stop);
+        myarray = (Integer[])mylist.toArray(new Integer[mylist.size()]);
       return myarray;
 
 

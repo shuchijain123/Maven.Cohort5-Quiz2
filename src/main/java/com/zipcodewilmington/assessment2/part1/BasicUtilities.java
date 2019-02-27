@@ -39,6 +39,9 @@ public class BasicUtilities {
 
     public Boolean startsWith(String string, Character character) {
         Boolean ans = true;
+       String str = "";
+       str.compareToIgnoreCase(character.toString());
+
         if (string.startsWith(character.toString())) {
 
             ans = true;
